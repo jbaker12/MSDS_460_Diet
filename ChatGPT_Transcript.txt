@@ -1,0 +1,61 @@
+Me:
+[Image of table with food data]
+    I'm working on the classic Linear Program problem called the Diet Problem. Based on the information I provide, I would like you to offer the optimal solution that minimizes cost that achieves the required nutrient constraints given five food items. Below are the constraints for the DAILY diet for the problem. I would like you to offer the optimal solution for a WEEK of food.
+    - Sodium: up to 5000 mg
+    - Calories: between 2000 and 3000 kcal
+    - Protein: at least 50 g
+    - Vitamin D: at least 20 mcg
+    - Calcium: at least 1300 mg
+    - Iron: at least 18 mg
+    - Potassium: at least 4700 mg
+
+    The attached image contains a table with the nutritional facts for 1 portion of food for each of the 5 items. Please let me know if you have any questions before starting the problem
+
+GPT:
+    Thanks for providing the details and constraints. Before proceeding, I will summarize the problem:
+
+    The goal is to minimize the weekly cost of food while meeting the given daily nutrient constraints.
+    The table includes details for five food items with their costs, sodium, calories, protein, vitamin D, calcium, iron, and potassium per portion.
+    Nutrient constraints are provided for a daily diet, and the solution is required for a week (multiplying daily constraints by 7).
+    I'll compute the optimal solution using linear programming. Let me know if you'd like any clarifications or additional constraints before I proceed!
+
+Me:
+    Looks good to me!
+
+GPT:
+    I'll solve this problem using linear programming. Here's the approach:
+
+        1. Variables: Let x1, x2, x3, x4, x5 represent the number of portions of each food item (TJ Potstickers, Omelet, Hotdog, Chicken Breast, Banana) consumed per day.
+
+        2. Objective: Minimize the total cost over one week:
+            Minimize: 7 * (1.75x1 + 3.92x2 + 1.50x3 + 0.45x4 + 0.23x5)
+
+        3. Constraints: Ensure that the daily totals meet the given constraints:
+            Sodium: 625x1 + 961x2 + 1750x3 + 64x4 + 1x5 <= 5000
+            Calories: 325x1 + 486x2 + 570x3 + 152x4 + 105 is an Element of [2000, 3000]
+            Protein: 17.5x1 + 41.2x2 + 23x3 + 27x4 + 1.3x5 >= 50
+            Vitamin D: 0x1 + 27x2 + 0x3 + 4x4 + 0x5 >= 20
+            Calcium: 38x1 + 456x2 + 104x3 + 10x4 + 0x5 >= 1300
+            Iron: 3.5x1 + 4.1x2 + 4x3 + .7x4 + .2x5 >= 18
+            Potassium: 240x1 + 426x2 + 316x3 + 179x4 + 422x5 >= 4700
+
+        4. Non-negativity: x1, x2, x3, x4, x5 >= 0
+
+    I'll now set this up and solve for the optimal solution.
+
+    The optimal solution has been successfully found. Here is the breakdown for the weekly diet that minimizes cost:
+
+    Weekly Portions:
+        TJ Potstickers: 0.15 portions/day (1.05 portions/week)
+        Omelet: 2.51 portions/day (17.57 portions/week)
+        Hotdog: 1.42 portions/day (9.93 portions/week)
+        Chicken Breast: 0 portions/day (0 portions/week)
+        Banana: 7.45 portions/day (52.15 portions/week)
+    Total Weekly Cost:
+        $97.74
+    This solution meets all the daily nutrient constraints for a week while keeping costs minimized. Let me know if you'd like further insights or adjustments!
+
+    *link to popup containing generated python code for analysis*
+
+
+
