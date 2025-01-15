@@ -1,0 +1,30 @@
+Below are the results for 1 day:
+    Food_Banana = 7.4512847
+    Food_Hotdog = 1.4181756
+    Food_Omelet = 2.5149122
+    Food_Potsticker = 0.15025737
+    Total Cost of Diet =  13.9624651025
+
+Below are the results for 1 week:
+    Food_Banana = 52.158993
+    Food_Hotdog = 9.927229
+    Food_Omelet = 17.604385
+    Food_Potsticker = 1.0518016
+    Total Cost of Diet =  97.73725389
+
+Below are the results for 1 week with a minimum of one portion per item:
+    Food_Banana = 51.847052
+    Food_Chicken = 1.0
+    Food_Hotdog = 9.8019096
+    Food_Omelet = 17.615354
+    Food_Potsticker = 1.0
+    Total Cost of Diet =  97.87987404
+
+Below are the results for 1 week with a minimum of one portion per day per item:
+    Food_Banana = 42.0
+    Food_Chicken = 21.875136
+    Food_Hotdog = 7.0
+    Food_Omelet = 17.296598
+    Food_Potsticker = 7.0
+    Total Cost of Diet =  110.05647536
+
